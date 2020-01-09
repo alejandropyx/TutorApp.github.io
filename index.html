@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>MIBO - Mentoring Request</title>
+		<link rel="stylesheet" href="styles.css">
+		<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	</head>
+	<body>
+		<script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+		<script src="scripts.js"></script>
+
+		<div id="back">
+		<div id="formulario" >
+		<div class="title">
+			<h2>MIBO</h2>
+			<h2>Mentoring Request</h2>
+		</div>
+        <form>
+		<div class="container-fluid">
+		<hr data-content="Personal Information" class="hr-text">
+			<div class="row">
+				<div class="col-sm-4 col-xs-12">
+					<label for="exampleFormControlInput1">First name</label>	
+				</div>
+				<div class="col-sm-8 col-xs-12">
+					<input type="text" class="form-control" placeholder="First name">	
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-4 col-xs-12">
+					<label for="exampleFormControlInput1">Last name</label>
+				</div>
+				<div class="col-sm-8 col-xs-12">
+					<input type="text" class="form-control" placeholder="Last name">	
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-4 col-xs-12">
+					<label for="exampleFormControlInput1">Javeriana's Username</label>
+				</div>
+				<div class="col-sm-8 col-xs-12">
+					<input type="text" class="form-control" placeholder="Username">	
+				</div>
+			</div>
+			
+			<div class="row">
+				<div class="col-sm-4 col-xs-12">
+					<label for="exampleFormControlInput1">Cellphone number</label>
+				</div>
+				<div class="col-sm-8 col-xs-12">
+					<input type="number" class="form-control" placeholder="number">	
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-4 col-xs-12">
+					<label for="exampleFormControlInput1">Carrer</label>
+				</div>
+				<div class="col-sm-8 col-xs-12">
+					<select class="form-control">
+					  <option>Select your carrer</option>
+					  <option>Master bioeengeniering</option>
+					  <option>Master Electronics</option>
+					  <option>Master Computation</option>
+					</select>
+				</div>
+			</div>				
+		</div>
+		
+			<div class="classes">
+			<hr data-content="Course" class="hr-text">				
+			<div class="container-fluid">
+			<div class="row">
+			
+				<div class="col-sm-4 col-xs-6 cmargin">
+					<div id="cMATLAB" onclick="selectClass(this)" class="class d-flex w-100 justify-content-center align-self-center">	
+						MATLAB
+					</div>
+				</div>
+				
+				<div class="col-sm-4 col-xs-6 cmargin">
+					<div id="cDSP" onclick="selectClass(this)" class="class d-flex w-100 justify-content-center align-self-center ">
+						Procesamiento señales
+					</div>
+				</div>
+				
+				<div class="col-sm-4 col-xs-6 cmargin">
+					<div id="cCON" onclick="selectClass(this)" class="class d-flex w-100 justify-content-center align-self-center">	
+					Consejería
+					</div>
+				</div>					
+			</div>
+				
+			</div>				
+			</div>
+			
+			<div id="modeContainer" class="mode">
+			<hr data-content="Meeting" class="hr-text">
+			<div class="container-fluid">
+			<div class="row">
+				<div class="col-6 cmargin">
+					<div  id="mFTF" onclick="meeting	(this)" class="type d-flex w-100 justify-content-center align-self-center">	
+						Face to Face
+					</div>
+				</div>
+				
+				<div  class="col-6 cmargin">
+					<div id="mSKY" onclick="meeting(this)" class="type d-flex w-100 justify-content-center align-self-center ">
+						Skype
+					</div>
+				</div>	
+			</div>
+				
+			</div>				
+			</div>
+			
+			<div id="HoursContainer" class="Hours">
+			<hr data-content="Hour" class="hr-text">
+			<div class="container-fluid">
+			<div class="row">
+				<div class="col-3 cmargin">
+					<div id="h1" onclick="hour(this)" class="hour d-flex w-100 justify-content-center align-self-center">	
+						2:30pm
+					</div>
+				</div>
+				
+				<div class="col-3 cmargin">
+					<div id="h2" onclick="hour(this)" class="hour d-flex w-100 justify-content-center align-self-center ">
+						4:00pm
+					</div>
+				</div>
+				
+				<div class="col-3 cmargin">
+					<div id="h3" onclick="hour(this)" class="hour d-flex w-100 justify-content-center align-self-center">	
+					5:00pm
+					</div>
+				</div>	
+				<div class="col-3 cmargin">
+					<div id="h4" onclick="hour(this)" class="hour d-flex w-100 justify-content-center align-self-center">	
+					6:00pm
+					</div>
+				</div>					
+			</div>
+				
+			</div>				
+			</div>
+			
+			  <div class="containerbtn">
+			  <div class="container-fluid">
+			  <div class="row justify-content-center">
+			  
+				<div class="col-2 cmargin justify-content-center ">
+					<button id="btnRequest" type="submit" class="mybut transform">
+                        Request
+                    </button>
+				</div>
+				
+			</div>
+			</div>  
+			</div>
+			
+		</form>       
+		</div>
+		</div>
+		
+		
+		
+		
+	</body>
+</html>
