@@ -47,15 +47,28 @@ function hour(x) {
 
 
 function sendEmail() {
-	Email.send({
-    SecureToken : "af26fe52-83a3-4e0d-a402-b11b9a5e0f66",
-    To : 'alejandro.s18c@gmail.com',
-    From : "alejandro.s18c@gmail.com",
-    Subject : "This is the subject",
-    Body : "And this is the body"
-}).then(
-  message => alert(message)
-).catch(function(e) {
-  console.log(e); // "oh, no!"
-});
+	
+	$.ajax({
+  type: “POST”,
+  url: “https://mandrillapp.com/api/1.0/messages/send.json”,
+  data: {
+    ‘key’: ‘1bd8c0eb3daa822bceeb908ad13c829c-us4’,
+    ‘message’: {
+      ‘from_email’: ‘alejandro.s18c@gmail.com’,
+      ‘to’: [
+          {
+            ‘email’: ‘alejandro.s18c@gmail.com’,
+            ‘name’: ‘RECIPIENT NAME (OPTIONAL)’,
+            ‘type’: ‘to’
+          }
+        ],
+      ‘autotext’: ‘true’,
+      ‘subject’: ‘YOUR SUBJECT HERE!’,
+      ‘html’: ‘YOUR EMAIL CONTENT HERE! YOU CAN USE HTML!’
+    }
+  }
+ }).done(function(response) {
+   console.log(response); // if you're into that sorta thing
+ });
+
 }
