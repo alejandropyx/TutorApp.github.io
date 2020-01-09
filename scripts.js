@@ -55,5 +55,7 @@ function sendEmail() {
     Body : "And this is the body"
 }).then(
   message => alert(message)
-);
+).catch(function(e) {
+  console.log(e); // "oh, no!"
+});
 }
