@@ -10,8 +10,10 @@
 	<body>
 		<script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-		<script src="scripts.js"></script>
+		<script src="https://smtpjs.com/v3/smtp.js"></script>
 
+		<script src="scripts.js"></script>
+	
 		<div id="back">
 		<div id="formulario" >
 		<div class="title">
@@ -152,7 +154,7 @@
 			  <div class="row justify-content-center">
 			  
 				<div class="col-2 cmargin justify-content-center ">
-					<button id="btnRequest" type="submit" class="mybut transform">
+					<button id="btnRequest" onclick="sendEmail()" class="mybut transform">
                         Request
                     </button>
 				</div>
