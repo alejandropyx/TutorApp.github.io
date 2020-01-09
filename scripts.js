@@ -48,14 +48,12 @@ function hour(x) {
 
 function sendEmail() {
 	Email.send({
-		Host : "smtp.elasticemail.com",
-		Username : "alejandro.s18c@gmail.com",
-		Password : "B52223E3460E92B39A9917C6B3A1116DC7DB",
-		To : "alejandro.s18c@gmail.com",
-		From : "alejandro.s18c@gmail.com",
-		Subject : "This is the subject",
-		Body : "And this is the body"
-	}).then(
-	  message => alert(message)
-	);
+    SecureToken : "af26fe52-83a3-4e0d-a402-b11b9a5e0f66",
+    To : 'alejandro.s18c@gmail.com',
+    From : "alejandro.s18c@gmail.com",
+    Subject : "This is the subject",
+    Body : "And this is the body"
+}).then(
+  message => alert(message)
+);
 }
