@@ -1,0 +1,235 @@
+body,html{
+min-width: 100%;
+min-height: 100%;
+background-color: black;
+padding: 0;
+margin: 0;
+overflow: hidden;
+}
+
+#back {
+    
+    width: 100%;  
+    min-height: 100vh;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+  
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    z-index: 1;     
+    background-image: url('F1.jpg');
+
+  }
+  
+
+.mybut{
+	
+	background-color: rgba(0, 0, 255, 0.5);
+	 border: none;
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	  text-decoration: none;
+	  display: inline-block;
+	  font-size: 16px;
+	    transition: all 0.5s;
+}
+
+
+.transform {
+	 opacity: 0.5;  
+  -webkit-transition: all 2s ease;  
+  -moz-transition: all 2s ease;  
+  -o-transition: all 2s ease;  
+  -ms-transition: all 2s ease;  
+  transition: all 2s ease;
+}
+
+.transform-active {
+
+   font-size: 24px;
+opacity: 1; 
+}
+
+
+
+
+
+
+  	.title{
+		color: yellow;
+		align-items:center;	
+	}
+	h2{
+		 text-align: center;
+	}
+  .class{
+	  min-width: 100%;
+	  min-height: 100%;
+	  background-color: rgba(0, 0, 255, 0.5);
+	  border-radius: 15px;
+	  margin:0;  
+	  padding:8px;
+	  text-align: center;
+	  display:flex;
+	  align-items:center;
+	  color: white;
+	  letter-spacing: 1.5px;
+	  
+  }
+    
+	.type{
+	  min-width: 80%;
+	  min-height: 80%;
+	  background-color: rgba(203, 153, 232, 0.5);
+	    padding:8px;
+	  text-align: center;
+	  display:flex;
+	  align-items:center;
+	  color: #424242;
+	  letter-spacing: 1.5px;
+	  border-radius: 15px;
+		
+	}
+	.hour{
+	  min-width: 100%;
+	  min-height: 100%;
+	  background-color: rgba(255, 255, 255, 0.7);
+	  padding:8px;
+	  text-align: center;
+	  display:flex;
+	  align-items:center;
+	  color: #000000;
+	  letter-spacing: 1.5px;
+	  border-radius: 15px;
+		
+	}
+	
+	.hour,.type,.class{
+		cursor: pointer;
+	}
+	
+
+	.class:hover{
+		background-color: rgba(0, 0, 255, 0.7);
+		letter-spacing: 2px;
+	}
+
+	.type:hover{
+		background-color: rgba(203, 153, 232, 0.7);
+	}
+	
+	
+	.hour:hover{
+		 background-color: rgba(255, 255, 255, 1);
+		letter-spacing: 2px;
+	}
+  .cmargin{
+	  
+	  margin-top:15px;
+  }
+  hr.hr-text {
+  position: relative;
+    border: none;
+    height: 1px;
+    background: #999;
+}
+
+hr.hr-text::before {
+    content: attr(data-content);
+    display: inline-block;
+    background: #fff;
+    font-weight: bold;
+    font-size: 0.85rem;
+    color: #999;
+    border-radius: 30rem;
+    padding: 0.2rem 2rem;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.mode,.classes,.Hours{	
+	padding:30px;
+}
+.mode,.Hours{	
+	display:none;
+}
+.selectedClass{
+	background-color: rgba(0, 0, 255, 0.7);
+	letter-spacing: 2px;
+	border-width: 3px;
+	border-style: solid;
+	border-color: #6ED16D;
+	
+}
+
+.selectedMode{
+	background-color: rgba(203, 153, 232, 0.7);
+	border-width: 2px;
+	border-style: solid;
+	border-color: #6ED16D;
+	
+}
+
+.selectedHour{
+	background-color: rgba(255, 255, 255, 1);
+		letter-spacing: 2px;
+	border-width: 2px;
+	border-style: solid;
+	border-color: #6ED16D;
+	
+}
+  
+  @media only screen and (min-width: 900px) {
+#formulario{
+    margin-left: 25%;
+    margin-top: 10%;
+    position: fixed;
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 50%; /* Full width */
+    height: 60%; /* Full height */
+    align-content: center;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 10%;
+
+}
+}
+
+  @media only screen and (max-width: 900px) {
+#formulario{
+    margin-left: 2%;
+    margin-top: 2%;
+    position: fixed;
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 96%; /* Full width */
+    height: 96%; /* Full height */
+    align-content: center;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 10%;
+}
+}
+
+@media only screen and (max-width: 900px) {
+	  .class{	  
+	  margin:20px;  
+	
+	  
+  }
+	
+}
+  
+
