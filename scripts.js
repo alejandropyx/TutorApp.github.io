@@ -1,5 +1,4 @@
 
-
 function selectClass(x) {
    element = document.getElementById(x.id);
 	var x = document.getElementsByClassName("class");     
@@ -45,3 +44,18 @@ function hour(x) {
 	$('.transform').toggleClass('transform-active');
 
 };
+
+
+function sendEmail() {
+	Email.send({
+		Host : "smtp.elasticemail.com",
+		Username : "alejandro.s18c@gmail.com",
+		Password : "B52223E3460E92B39A9917C6B3A1116DC7DB",
+		To : "alejandro.s18c@gmail.com",
+		From : "alejandro.s18c@gmail.com",
+		Subject : "This is the subject",
+		Body : "And this is the body"
+	}).then(
+	  message => alert(message)
+	);
+}
