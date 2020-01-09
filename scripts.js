@@ -1,8 +1,4 @@
 
-fetch('DB.txtt')
-  .then(response => response.text())
-  .then(text => console.log(text))
-
 
 function selectClass(x) {
    element = document.getElementById(x.id);
