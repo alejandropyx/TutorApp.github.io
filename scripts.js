@@ -57,8 +57,8 @@ function sendEmail() {
       'from_email': 'alejandro.s18c@gmail.com',
       'to': [
           {
-            'email': 'lejandro.s18c@gmail.com'
-            'name': 'ECIPIENT NAME (OPTIONAL)'
+            'email': 'alejandro.s18c@gmail.com',
+            'name': 'ECIPIENT NAME (OPTIONAL)',
             'type': 'to'
           }
         ],
